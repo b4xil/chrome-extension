@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  padding: 12px;
+  width: 320px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: #f5f5f7;
+  color: #1d1d1f;
+}
+
+/* Title */
+h2 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+/* Container */
+#list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+/* Card style for each highlight */
+.item {
+  background: #f2f2f7;
+  padding: 10px 12px;
+  border-radius: 12px;
+
+  /* subtle border */
+  border: 1px solid rgba(0, 0, 0, 0.05);
+
+  /* soft shadow */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+
+  transition: all 0.15s ease;
+}
+
+/* Highlight text */
+.item p {
+  font-size: 13px;
+  margin: 0 0 8px 0;
+  line-height: 1.4;
+  color: #2c2c2e;
+}
+
+/* URL (optional small text) */
+.item small {
+  display: block;
+  font-size: 11px;
+  color: #8e8e93;
+  margin-bottom: 8px;
+}
+
+.item:hover {
+  transform: translateY(-2px);
+  transition: all 0.15s ease;
+}
+
+/* Buttons container */
+.item button {
+  border: none;
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  cursor: pointer;
+  margin-right: 6px;
+  transition: all 0.15s ease;
+}
+
+/* Delete button (subtle red) */
+.item button[data-index] {
+  background: #fdecea;
+  color: #b02a37;
+}
+
+/* Summarize button (subtle blue) */
+.item button[data-sum] {
+  background: #e8f0fe;
+  color: #1a73e8;
+}
+
+/* Hover effect */
+.item button:hover {
+  transform: translateY(-1px);
+  opacity: 0.9;
+}

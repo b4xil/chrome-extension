@@ -1,0 +1,46 @@
+#highlight-popup {
+  position: absolute;
+  background: #ffffff;
+  color: #111;
+  padding: 10px 14px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  font-size: 13px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Text */
+#highlight-popup span {
+  font-weight: 500;
+}
+
+/* Base button */
+#highlight-popup button {
+  border: none;
+  padding: 5px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+/* YES (subtle green) */
+#highlight-popup .yes-btn {
+  background: #e6f4ea;
+  color: #1e7e34;
+}
+
+/* NO (subtle red) */
+#highlight-popup .no-btn {
+  background: #fdecea;
+  color: #b02a37;
+}
+
+/* Hover (very subtle) */
+#highlight-popup button:hover {
+  transform: translateY(-1px);
+}
